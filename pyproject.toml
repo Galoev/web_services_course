@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "web-services-course"
+version = "0.1.0"
+description = ""
+authors = ["Galoev <galoyev.ilkin@gmail.com>"]
+readme = "README.md"
+packages = [{include = "web_services_course"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.85.0"
+uvicorn = "^0.18.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+flake8 = "^5.0.4"
+isort = "^5.10.1"
+flake8-docstrings = "^1.6.0"
+flake8-quotes = "^3.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
