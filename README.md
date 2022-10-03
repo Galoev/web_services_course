@@ -6,3 +6,8 @@ python -m grpc_tools.protoc --proto_path="protos/" --python_out="protos/builds/"
 
 python server.py
 python client.py images/main_image.jpg images/cv_logo.png 50 .
+
+
+![Alt text](images/cv_logo.png "LOGO")
+![Alt text](images/main_image.jpg "MAIN")
+![Alt text](new_image.jpg "MAIN")
