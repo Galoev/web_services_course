@@ -1,1 +1,18 @@
 syntax = "proto3";
+
+message Image {
+  int64 height = 1;
+  int64 width = 2;
+  int64 channel = 3;
+  bytes data = 4;
+}
+
+message Request {
+  Image logo_image = 1;
+  Image main_imgae = 2;
+  int64 opacity = 3;
+}
+
+service WatermarkService {
+  rpc addImageWatermark(Request) returns (Image);
+}
